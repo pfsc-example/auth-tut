@@ -41,3 +41,13 @@ deduc Pf of Thm.C {
     "
 
 }
+
+anno Notes @@@
+This is a simple annotation.
+It can point to <chart:>[a step in a proof]{
+    view: Pf.R
+}, and to <chart:>[another step]{
+    view: Pf.S
+}, and thereby offer some discussion or explanation of the proof.
+@@@
+
