@@ -3,7 +3,7 @@ deduc Thm {
 
     asrt C {
 
-        en = "Some amazing theorem statement."
+        sy = "$\mathrm{e}^{i \pi} + 1 = 0$"
 
     }
 
