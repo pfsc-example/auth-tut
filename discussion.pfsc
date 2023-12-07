@@ -1,0 +1,15 @@
+from ..theorem1 import Pf
+
+anno Notes @@@
+# Discussion
+
+This is a simple annotation. It's basically the same as
+the one we wrote before, but we're changing it up a little,
+so that we can tell it apart.
+
+This annotation can point to <chart:>[a step in a proof]{
+    view: Pf.R
+}, and to <chart:>[another step]{
+    view: Pf.S
+}, and thereby offer some discussion or explanation of the proof.
+@@@
