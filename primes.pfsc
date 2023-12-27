@@ -19,3 +19,97 @@ must be congruent both <doc:>[to $0$]{
     sel: "OnPrimes#v2;s1;(1:816:1056:267:510:100:20)"
 } mod some prime $p$, and this contradiction completes the proof.
 @@@
+
+deduc Lem1 {
+
+    asrt C {
+        en = "
+        Every composite number is divisible
+        by some prime number.
+        "
+    }
+
+    meson = "C"
+}
+
+
+deduc Thm2 {
+
+    asrt C {
+        en = "
+        There are infinitely
+        many prime numbers.
+        "
+    }
+
+    meson = "C"
+}
+
+
+deduc Pf2 of Thm2.C {
+
+    supp S10 {
+        en = "
+        Suppose there were only
+        finitely many primes.
+        "
+    }
+
+    intr I20 {
+        en = "
+        Let all the primes be
+        $p_1, p_2, \ldots, p_n$.
+        "
+    }
+
+    intr I30 {
+        en = "
+        Let $N = p_1 p_2 \cdots p_n + 1$.
+        "
+    }
+
+    asrt A40 {
+        en = "
+        For all $i$, $N > p_i$.
+        "
+    }
+
+    asrt A50 {
+        en = "
+        For all $i$, $N \neq p_i$.
+        "
+    }
+
+    asrt A60 {
+        en = "$N$ is composite"
+    }
+
+    exis E70 {
+        intr I {
+            en = "a prime number $p$"
+        }
+        asrt A {
+            sy = "$p \mid N$"
+        }
+    }
+
+    asrt A80 {
+        sy = "$N \equiv 0 \mod p$"
+    }
+
+    asrt A90 {
+        sy = "$N \equiv 1 \mod p$"
+    }
+
+    flse F100 contra S10 {}
+
+
+    meson = "
+    Suppose S10. Let I20. Let I30.
+    Then A40, so A50, hence A60.
+    Therefore E70, using Lem1.
+    From E70.A get A80, but A90 by I30 and E70.I.
+    Hence F100, by A80.
+    Therefore Thm2.C.
+    "
+}
