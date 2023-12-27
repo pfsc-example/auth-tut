@@ -8,13 +8,13 @@ anno Guide @@@
 
 In the proof of the infinitude of primes, the key construction is
 <doc:>[the number $N$]{
-    sel: "OnPrimes#v2;s1;(1:816:1056:190:410:142:25)",
+    sel: Pf2.I30,
 }.
 Having <doc:>[supposed]{
-    sel: "OnPrimes#v2;s1;(1:816:1056:238:365:320:19)"
+    sel: Pf2.S10
 } there were only finitely many primes, we conclude that $N$
 must be congruent both <doc:>[to $0$]{
-    sel: "OnPrimes#v2;s1;(1:816:1056:341:485:100:20)"
+    sel: Pf2.A80
 } and <doc:>[to $1$]{
     sel: Pf2.A90
 } mod some prime $p$, and this contradiction completes the proof.
