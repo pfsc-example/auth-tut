@@ -1,6 +1,14 @@
+OnPrimes = {
+    url: "https://resources.proofscape.org/cors/pdf/example/primes.pdf",
+    docId: "pdffp:6ad45bf008a7900624260330da212d75",
+}
+
 anno Guide @@@
 # Key Ideas
 
 In the proof of the infinitude of primes, the key construction is
-the number $N$.
+<doc:>[the number $N$]{
+    doc: OnPrimes,
+    sel: "v2;s1;(1:816:1056:191:410:142:25)",
+}.
 @@@
