@@ -60,6 +60,8 @@ deduc Pf2 of Thm2.C {
         Let all the primes be
         $p_1, p_2, \ldots, p_n$.
         "
+        
+        doc = "OnPrimes#v2;s1;(1:816:1056:233:389:148:19);n;x+27;y+2;(1:816:1056:385:393:87:16)"
     }
 
     intr I30 {
