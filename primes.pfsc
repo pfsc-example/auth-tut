@@ -48,11 +48,15 @@ deduc Thm2 {
 
 deduc Pf2 of Thm2.C {
 
+    docInfo = OnPrimes
+
     supp S10 {
         en = "
         Suppose there were only
         finitely many primes.
         "
+
+        doc = "v2;s1;(1:816:1056:237:365:172:20);n;(1:816:1056:410:364:148:21)"
     }
 
     intr I20 {
@@ -60,50 +64,70 @@ deduc Pf2 of Thm2.C {
         Let all the primes be
         $p_1, p_2, \ldots, p_n$.
         "
-        
-        doc = "OnPrimes#v2;s1;(1:816:1056:233:389:148:19);n;x+27;y+2;(1:816:1056:385:393:87:16)"
+
+        doc = "v2;s1;(1:816:1056:233:389:148:19);n;x+27;y+2;(1:816:1056:385:393:87:16)"
     }
 
     intr I30 {
         en = "
         Let $N = p_1 p_2 \cdots p_n + 1$.
         "
+
+        doc = "v2;s1;(1:816:1056:581:387:46:22);n;(1:816:1056:188:411:144:21)"
     }
 
     asrt A40 {
         en = "
         For all $i$, $N > p_i$.
         "
+
+        doc = "v2;s1;(1:816:1056:236:434:48:24)"
     }
 
     asrt A50 {
         en = "
         For all $i$, $N \neq p_i$.
         "
+
+        doc = "v2;s1;(1:816:1056:387:411:135:22);n;(1:816:1056:525:412:102:23)"
     }
 
     asrt A60 {
         en = "$N$ is composite"
+
+        doc = "v2;s1;(1:816:1056:317:436:150:20)"
     }
 
     exis E70 {
         intr I {
             en = "a prime number $p$"
+
+            doc = "v2;s1;z1;(1:816:1056:506:461:94:22)"
         }
         asrt A {
             sy = "$p \mid N$"
+
+            doc = "v2;s1;z2;(1:816:1056:346:459:20:21);(1:816:1056:424:459:81:23);x+1;y+3;(1:816:1056:588:462:12:19)"
         }
+
+        doc = "v2;s1;(1:816:1056:347:459:252:24)"
     }
 
     asrt A80 {
         sy = "$N \equiv 0 \mod p$"
+
+        doc = "v2;s1;(1:816:1056:340:484:101:22)"
     }
 
     asrt A90 {
         sy = "$N \equiv 1 \mod p$"
+
+        doc = "v2;s1;(1:816:1056:266:509:100:22)"
     }
 
-    flse F100 contra S10 {}
+    flse F100 contra S10 {
+        doc = "v2;s1;(1:816:1056:375:510:130:20)"
+    }
 
 
     meson = "
