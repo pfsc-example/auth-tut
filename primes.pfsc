@@ -8,7 +8,6 @@ anno Guide @@@
 
 In the proof of the infinitude of primes, the key construction is
 <doc:>[the number $N$]{
-    doc: OnPrimes,
-    sel: "v2;s1;(1:816:1056:191:410:142:25)",
+    sel: "OnPrimes#v2;s1;(1:816:1056:191:410:142:25)",
 }.
 @@@
