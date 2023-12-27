@@ -16,7 +16,7 @@ Having <doc:>[supposed]{
 must be congruent both <doc:>[to $0$]{
     sel: "OnPrimes#v2;s1;(1:816:1056:341:485:100:20)"
 } and <doc:>[to $1$]{
-    sel: "OnPrimes#v2;s1;(1:816:1056:267:510:100:20)"
+    sel: Pf2.A90
 } mod some prime $p$, and this contradiction completes the proof.
 @@@
 
