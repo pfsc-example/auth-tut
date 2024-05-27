@@ -10,3 +10,4 @@ from my math courses.
     :maxdepth: 2
 
     AbstAlgFall2023/index
+    AlgNoThSpring2025/index
