@@ -154,5 +154,8 @@ Start by picking a prime number $p$.
 <param:eg1_p>[]{
     ptype: "Prime",
     tex: "p",
+    args: {
+        chooserUpperBound: 50,
+    }
 }
 @@@
