@@ -167,7 +167,54 @@ where by "primorial" we mean a factorial featuring only prime factors.
         p: eg1_p,
     },
     build: """
-    html = f'<p>TO DO: Investigate $p$-primorial plus $1$ for $p = {p}$</p>'
+    # Let M be p-primorial
+    primes = primerange(p + 1)
+    M = 1
+    for q in primes:
+        M *= q
+
+    # N = M + 1 is the number we want to investigate
+    N = M + 1
+    N_is_prime = isprime(N)
+    N_factors = None if N_is_prime else factorint(N)
+
+    def write_factorization(factors):
+        return r' \cdot '.join(
+            f'{b}^{{{e}}}' if e > 1 else str(b)
+            for b, e in factors.items()
+        )
+
+    def spell_out_primorial(Q):
+        primes = primerange(Q + 1)
+        s = ''
+        for k, q in enumerate(reversed(list(primes))):
+            if k == 0:
+                s += str(q)
+            elif k == 3 and q > 3:
+                s += r' \cdots 2'
+                break
+            else:
+                s += rf' \cdot {q}'
+        return s
+
+    # Now we can build our display HTML
+    simplify_M = f' = {M}' if M > 2 else ''
+
+    html = (
+        '$p$-primorial is:\n'
+        f'$$M = {spell_out_primorial(p)}{simplify_M}$$\n'
+        'Let $N$ be $p$-primorial plus $1$:\n'
+        f'$$N = M + 1 = {N}$$\n'
+    )
+
+    html += (
+        '<p>Is $N$ prime?</p>\n'
+        f'<p><b>Answer: </b>{"Yes" if N_is_prime else "No"}</p>\n'
+    )
+
+    if not N_is_prime:
+        html += f'$$N = {write_factorization(N_factors)}$$'
+
     return html
     """
 }
