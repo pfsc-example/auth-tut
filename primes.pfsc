@@ -158,4 +158,17 @@ Start by picking a prime number $p$.
         chooserUpperBound: 50,
     }
 }
+
+Now we can ask whether "$p$-primorial plus $1$" is a prime number or not,
+where by "primorial" we mean a factorial featuring only prime factors.
+
+<disp:>[]{
+    import: {
+        p: eg1_p,
+    },
+    build: """
+    html = f'<p>TO DO: Investigate $p$-primorial plus $1$ for $p = {p}$</p>'
+    return html
+    """
+}
 @@@
