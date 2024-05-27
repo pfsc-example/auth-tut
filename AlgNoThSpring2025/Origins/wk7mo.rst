@@ -9,11 +9,15 @@ Week 7, Monday
 We looked at Hilbert's Thm 119, which shows how primes different from $\ell$ factor
 in the $\ell$th cyclotomic field.
 
-I want to talk about :pfsc-chart:`this step <Thm119.Pf.S130.A2>`.
+I want to talk about |this step|.
 Here $\mathfrak{p}$ is a prime ideal coprime to $\ell$.
 The proof cites a step from the proof of Thm 117, where we factored $\ell$.
 I want to go back and look at how we got that factorization, so let's
 |open the proof of Thm 117|.
+
+.. |this step| pfsc-chart::
+    :view: Thm119.Pf.S130.A2
+    :group: ".."
 
 .. |open the proof of Thm 117| pfsc-chart::
     :view: Thm117.Pf.A5

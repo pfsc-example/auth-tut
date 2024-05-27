@@ -6,6 +6,9 @@ Week 7, Wednesday
 
     from gh.toepproj.lit.H.ilbert.ZB import Thm119
 
+.. pfsc-ctl::
+    :default_chart_group: ".."
+
 Carrying on with Thm 119, we were looking at
 :pfsc-chart:`this step <Thm119.Pf.S130.A2>`. I want to now talk about the role
 this step is playing in this proof.
