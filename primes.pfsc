@@ -218,4 +218,31 @@ where by "primorial" we mean a factorial featuring only prime factors.
     return html
     """
 }
+
+Examining multiple cases at once can sometimes be a way to detect
+unexpected patterns. You can examine a range of primes $p$ below.
+
+<disp:>[]{
+    build: """
+    # BEGIN EDIT
+    # Check p-primorial + 1 for all primes p in the interval
+    # from a to b.
+    a, b = 0, 20
+    # END EDIT
+    html = '<pre>p, p-primorial + 1, prime or not (factorization below)</pre>\n'
+    html += '<pre>--------------------------------</pre>\n'
+    P = primerange(b)
+    M = 1
+    for p in P:
+        M *= p
+        if p >= a:
+            N = M + 1
+            ans = isprime(N)
+            html += f'<pre>{p}, {N}: {"" if ans else "not "}prime</pre>\n'
+            if not ans:
+                F = factorint(N)
+                html += f'<pre>  {F}</pre>\n'
+    return html
+    """
+}
 @@@
