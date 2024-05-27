@@ -228,7 +228,7 @@ unexpected patterns. You can examine a range of primes $p$ below.
     # Check p-primorial + 1 for all primes p in the interval
     # from a to b.
     a, b = 0, 20
-    # END EDIT
+    
     html = '<pre>p, p-primorial + 1, prime or not (factorization below)</pre>\n'
     html += '<pre>--------------------------------</pre>\n'
     P = primerange(b)
@@ -242,6 +242,7 @@ unexpected patterns. You can examine a range of primes $p$ below.
             if not ans:
                 F = factorint(N)
                 html += f'<pre>  {F}</pre>\n'
+    # END EDIT
     return html
     """
 }
