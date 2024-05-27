@@ -142,5 +142,17 @@ deduc Pf2 of Thm2.C {
 
 
 anno primorials_plus_one on Pf2.I30 @@@
-...
+Under the *reductio* assumption of the proof, that there are only finitely many
+primes, the number $N$ always turns out to be prime. But what happens in the real
+world, where there are in fact infinitely many primes?
+
+We'll investigate numbers of the form of $N$, and check whether they're actually
+prime or not.
+
+Start by picking a prime number $p$.
+
+<param:eg1_p>[]{
+    ptype: "Prime",
+    tex: "p",
+}
 @@@
